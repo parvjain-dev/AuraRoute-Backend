@@ -1,0 +1,74 @@
+{% extends "sqladmin/layout.html" %}
+{% block content %}
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<div class="col-12">
+    <div class="card">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <h3 class="card-title mb-0">Aura Route Spatial View</h3>
+            
+            <!-- Map Filter Dropdown -->
+            <div>
+                <label class="fw-bold me-2">Filter Data:</label>
+                <select id="sourceFilter" class="form-select form-select-sm d-inline-block w-auto" onchange="updateMap()">
+                    <option value="ALL">Show All Places</option>
+                    <option value="OSM">OSM Baseline (Blue)</option>
+                    <option value="LLM_CURATED">LLM Curated (Red)</option>
+                </select>
+            </div>
+        </div>
+        <div class="card-body">
+            <div id="map" style="height: 700px; width: 100%; border-radius: 8px;"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var map = L.map('map').setView([12.9716, 77.5946], 8); // Centered on Bengaluru
+    
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '© OpenStreetMap'
+    }).addTo(map);
+
+    var places = {{ places_json | safe }};
+    var activeMarkers = [];
+
+    function updateMap() {
+        // 1. Clear existing markers
+        activeMarkers.forEach(function(marker) {
+            map.removeLayer(marker);
+        });
+        activeMarkers = [];
+
+        var filterValue = document.getElementById('sourceFilter').value;
+
+        // 2. Plot filtered markers
+        places.forEach(function(place) {
+            if (place.lat && place.lon) {
+                // Apply the filter logic
+                if (filterValue !== 'ALL' && place.source !== filterValue) {
+                    return;
+                }
+
+                var isLLM = place.source === 'LLM_CURATED';
+                
+                var marker = L.circleMarker([place.lat, place.lon], {
+                    color: '#000000',      // Solid black border for high visibility
+                    weight: 1.5,           // Border thickness
+                    fillColor: isLLM ? '#FF0000' : '#0033CC', // Bright Red for LLM, Dark Blue for OSM
+                    fillOpacity: 0.9,      // Highly opaque/dark fill
+                    radius: isLLM ? 10 : 6 // Make LLM nodes noticeably larger
+                }).addTo(map);
+                
+                marker.bindPopup("<b>" + place.name + "</b><br>Source: <b>" + place.source + "</b>");
+                activeMarkers.push(marker);
+            }
+        });
+    }
+
+    // Initial render
+    updateMap();
+</script>
+{% endblock %}

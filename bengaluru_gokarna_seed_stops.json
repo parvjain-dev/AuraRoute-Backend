@@ -1,0 +1,205 @@
+{
+  "route": "Bengaluru to Gokarna",
+  "compiled_date": "2026-10-04",
+  "compilation_method": "Manual read-and-extract from published road-trip editorials and traveller pages: Savaari blog, TrekGo, NearBangalore, TravelHippies, two Tripoto trip pages, TravelTriangle (Sirsi restaurants), Sancharitravels, Holidify, a Team-BHP travelogue, TripAdvisor reviews (Hotel Mysore Cafe, Sri Guru Kottureshwara Benne Dosa) and a travel blog on Davangere benne dosa. Facts extracted; descriptive text is self-composed, not copied from source. Not yet phone-verified for current operating status.",
+  "route_summary": {
+    "primary_nh48_sirsi": "Bengaluru -> Nelamangala -> Tumakuru -> Sira -> Chitradurga -> Davanagere -> Haveri/Ranebennur -> Sirsi -> Devimane Ghat -> Kumta -> Gokarna. About 485-490 km, 9-10.5 hours including breaks.",
+    "alternative_shivamogga": "Bengaluru -> Tumakuru -> Kadur -> Shivamogga -> Sagar -> Kumta -> Gokarna (NH69 and state roads). About 513 km, around 10.5 hours (Savaari).",
+    "note": "One Tripoto rider's account counts 550 km one way, which does not match the guides; the 485-490 km figure is the one multiple sources agree on."
+  },
+  "caveats": [
+    "The route is long (about 9-10 hours), so meals fall at fixed points: breakfast around Tumakuru/Sira/Chitradurga, lunch around Davanagere/Haveri, tea at Sirsi. That is why the list is organised by meal window as well as distance.",
+    "Devimane Ghat (about 25 km, around 15 wide bends through forest) comes late in the day; TrekGo advises engine braking and avoiding it after dark.",
+    "Neither Tripoto page read for this route names any stop between Bengaluru and Sirsi. Their food mentions are all in Gokarna itself, so Tripoto adds almost nothing here beyond corroborating the beach-side stops; the inland stops rest on other sources.",
+    "Sri Guru Kottureshwara Benne Dosa is the best-evidenced stop, but a blog notes several imitators and that the original family shop (Ravi Benne Dosa) was closed on the writer's visit. Confirm the exact outlet and whether it is open on your travel day.",
+    "Chains and franchise outlets were excluded per UNQ-2: Five Star Chicken (Sirsi), plus Kamat Upachar and Paakashala (NH48 food-plaza outlets). Shark Food Court (Nagasandra) was also dropped as a generic takeaway.",
+    "approx_distance_from_source_km values are my estimates along each route, not figures from the sources; the sources only give the 485-513 km totals.",
+    "Dropped for lack of a usable signal: Spoorthi Prince Bar & Restaurant, Kaarar Forest Breez and Taj Restaurant (Savaari names with one-line descriptions only); generic 'Tumkur dhaba' and 'Hubli thali at any local restaurant' mentions (no establishment named).",
+    "The TourBabari guide could not be read (site blocks automated access), so it is not a source here.",
+    "Gokarna listings are included only because the route ends there; they are scored on the same evidence scale and mostly rest on one source each.",
+    "Meal windows are inferred from distance assuming a roughly 5 AM departure, which is what NearBangalore and others suggest; they are not sourced.",
+    "Hours are unconfirmed unless marked 'sourced'. Nothing here is phone-verified."
+  ],
+  "seed_stops": [
+    {
+      "name": "Hotel Mysore Cafe",
+      "location": "Seebara, near Nijalingappa Memorial, Chitradurga, Karnataka",
+      "route_variant": "Primary (NH48)",
+      "approx_distance_from_source_km": 200,
+      "hours": { "status": "unconfirmed", "note": "A reviewer recommends going around 8:30 AM for breakfast or in the evening for coffee; exact hours not given." },
+      "cuisines": ["South Indian", "Breakfast"],
+      "ideal_meal": "Breakfast",
+      "unique_lines": [
+        "A highway breakfast stop on the Chitradurga bypass, with masala dosa, idli and coffee that travellers rate above the other roadside options between Tumakuru and Hubli.",
+        "Service is quick and parking is easy, which matters on a day that has six more hours of driving."
+      ],
+      "worth_it_score": 6,
+      "score_reasoning": "Named dishes, 'better than other roadside options' language and a strong TripAdvisor ranking, but all from one reviewer-based source."
+    },
+    {
+      "name": "Sri Guru Kottureshwara Benne Dosa Hotel",
+      "location": "Medical College Road, opposite Bapuji Dental College, Kuvempu Nagar, Davanagere, Karnataka",
+      "route_variant": "Primary (NH48)",
+      "approx_distance_from_source_km": 265,
+      "hours": { "status": "unconfirmed", "note": "Hours are not stated in any source; the Davanagere benne dosa shops are breakfast and tiffin places, so assume they wind down by mid-afternoon." },
+      "cuisines": ["Karnataka", "South Indian"],
+      "ideal_meal": "Lunch",
+      "unique_lines": [
+        "Davanagere is where the butter dosa was born, and this small, always-crowded corner shop makes its dosas on a wood-fired stove, served with potato palya and coconut chutney.",
+        "Expect a wait of 10-30 minutes; one traveller made the 250 km trip just for it and called it fully worth the drive."
+      ],
+      "worth_it_score": 9,
+      "score_reasoning": "Named signature dish tied to the town, explicit 'worth the drive' language, and corroboration from TrekGo, Sancharitravels, TripAdvisor and a travel blog."
+    },
+    {
+      "name": "Meenakshi Bhavan",
+      "location": "Sirsi, Karnataka",
+      "route_variant": "Primary (NH48)",
+      "approx_distance_from_source_km": 410,
+      "hours": { "status": "unconfirmed", "note": "Assumption: lunch and tiffin service; confirm." },
+      "cuisines": ["South Indian", "Malnad"],
+      "ideal_meal": "Evening snack",
+      "unique_lines": [
+        "A Sirsi restaurant praised for butter masala dosa and kotte kadubu with vada, plus a lunch special that one guide calls legendary.",
+        "Sirsi is the last big town before the Devimane Ghat, so it is a sensible tea stop before the descent."
+      ],
+      "worth_it_score": 6,
+      "score_reasoning": "Named dishes and a 'legendary' claim, but from a single listing page."
+    },
+    {
+      "name": "Nammane Donne Biryani",
+      "location": "Sirsi, Karnataka",
+      "route_variant": "Primary (NH48)",
+      "approx_distance_from_source_km": 410,
+      "hours": { "status": "unconfirmed", "note": "Assumption: lunch and dinner service; confirm." },
+      "cuisines": ["Biryani", "Non-vegetarian"],
+      "ideal_meal": "Dinner",
+      "unique_lines": [
+        "A biryani specialist in Sirsi, serving the donne style with a kshaty kabab on the side.",
+        "A fit for non-vegetarian travellers who reach Sirsi late and want a proper meal before the ghat."
+      ],
+      "worth_it_score": 5,
+      "score_reasoning": "A named speciality from one listing page, with no 'worth the detour' language."
+    },
+    {
+      "name": "New Shetty's Fishland",
+      "location": "Sirsi, Karnataka",
+      "route_variant": "Primary (NH48)",
+      "approx_distance_from_source_km": 410,
+      "hours": { "status": "unconfirmed", "note": "Assumption: lunch and dinner service; confirm." },
+      "cuisines": ["Udupi", "Kundapur seafood"],
+      "ideal_meal": "Dinner",
+      "unique_lines": [
+        "A seafood restaurant serving Udupi and Kundapur-style coastal dishes, known for its crab sulla.",
+        "A taste of the coast before you reach it, which makes it an unusual find this far inland."
+      ],
+      "worth_it_score": 6,
+      "score_reasoning": "A named signature dish and a distinctive cuisine for an inland town, but one listing source."
+    },
+    {
+      "name": "Reddy Military Hotel",
+      "location": "Chitradurga, Karnataka",
+      "route_variant": "Primary (NH48)",
+      "approx_distance_from_source_km": 200,
+      "hours": { "status": "unconfirmed", "note": "Assumption: lunch service; confirm." },
+      "cuisines": ["Karnataka", "Non-vegetarian", "Military hotel style"],
+      "ideal_meal": "Lunch",
+      "unique_lines": [
+        "A military hotel, the Karnataka style of mess-like non-vegetarian meals, on the Chitradurga highway.",
+        "Group-friendly, so it suits a large family or friends travelling together."
+      ],
+      "worth_it_score": 4,
+      "score_reasoning": "A one-line generic description from a single source, with no named dish."
+    },
+    {
+      "name": "Masala Suruchi Vegetarian Restaurant",
+      "location": "Kadur, Karnataka",
+      "route_variant": "Alternative via Shivamogga",
+      "approx_distance_from_source_km": 215,
+      "hours": { "status": "unconfirmed", "note": "Assumption: breakfast and lunch service; confirm." },
+      "cuisines": ["South Indian", "Vegetarian"],
+      "ideal_meal": "Breakfast",
+      "unique_lines": [
+        "A South Indian vegetarian highway restaurant at Kadur, the first proper stop on the Shivamogga road.",
+        "Listed as group-friendly, though no source names a dish."
+      ],
+      "worth_it_score": 4,
+      "score_reasoning": "A generic description from one source."
+    },
+    {
+      "name": "Romanshia Restaurant",
+      "location": "Honnavar, Karnataka",
+      "route_variant": "Alternative via Shivamogga (coastal approach)",
+      "approx_distance_from_source_km": 440,
+      "hours": { "status": "unconfirmed", "note": "Assumption: lunch and dinner service; confirm." },
+      "cuisines": ["Seafood", "Non-vegetarian"],
+      "ideal_meal": "Dinner",
+      "unique_lines": [
+        "A family restaurant at Honnavar focused on seafood and non-vegetarian food.",
+        "Honnavar is on the coast south of Kumta, so it fits the Shivamogga/Sagar approach via Jog Falls rather than the Sirsi road."
+      ],
+      "worth_it_score": 4,
+      "score_reasoning": "A generic description from one source, with no named dish."
+    },
+    {
+      "name": "Prema Restaurant",
+      "location": "Gokarna Beach Road, Gokarna, Karnataka",
+      "route_variant": "Destination",
+      "approx_distance_from_source_km": 490,
+      "hours": { "status": "unconfirmed", "note": "Assumption: lunch and dinner service; confirm." },
+      "cuisines": ["Indian thali", "Israeli", "Continental"],
+      "ideal_meal": "Dinner",
+      "unique_lines": [
+        "A plain-looking beach-road restaurant whose food a Tripoto writer called delicious despite the shabby decor.",
+        "Menu spans Indian thalis, Israeli bread, pastas and homemade ice cream, a mix typical of Gokarna's long-stay crowd."
+      ],
+      "worth_it_score": 5,
+      "score_reasoning": "A distinctive 'looks shabby but the food is delicious' claim and an unusual menu, from a single page."
+    },
+    {
+      "name": "Namaste Cafe",
+      "location": "Om Beach, Gokarna, Karnataka",
+      "route_variant": "Destination",
+      "approx_distance_from_source_km": 495,
+      "hours": { "status": "unconfirmed", "note": "Assumption: daytime and evening service; confirm." },
+      "cuisines": ["Italian", "Indian", "Seafood"],
+      "ideal_meal": "Dinner",
+      "unique_lines": [
+        "Sits at one end of Om Beach with sea views, serving Italian and Indian food and offering rooms.",
+        "Mentioned by three separate sources, though none names a signature dish."
+      ],
+      "worth_it_score": 6,
+      "score_reasoning": "A distinctive location (Om Beach) and three independent mentions, but no dish signal."
+    },
+    {
+      "name": "Chez Christophe",
+      "location": "Near Om Beach, Gokarna, Karnataka",
+      "route_variant": "Destination",
+      "approx_distance_from_source_km": 495,
+      "hours": { "status": "unconfirmed", "note": "Assumption: evening service; confirm." },
+      "cuisines": ["Cafe", "Continental"],
+      "ideal_meal": "Dinner",
+      "unique_lines": [
+        "One of Gokarna's more lively cafes, with a relaxed feel and live music.",
+        "A cafe stop rather than a regional meal, for travellers who want a break from coastal Karnataka food."
+      ],
+      "worth_it_score": 5,
+      "score_reasoning": "A distinctive atmosphere (live music) from two sources, with no signature dish."
+    },
+    {
+      "name": "Gokarna family fish thali eatery (unnamed)",
+      "location": "Gokarna town, about a minute from the beach, Karnataka",
+      "route_variant": "Destination",
+      "approx_distance_from_source_km": 490,
+      "hours": { "status": "unconfirmed", "note": "Assumption: lunch service; confirm." },
+      "cuisines": ["Karnataka", "Seafood"],
+      "ideal_meal": "Lunch",
+      "unique_lines": [
+        "A small family-run place a minute from the beach, remembered by one rider for an exceptionally good fish thali.",
+        "No name is given, so treat this as a lead to find on arrival, not a pick."
+      ],
+      "worth_it_score": 4,
+      "score_reasoning": "A real dish signal (fish thali) but no restaurant name and a single source, so it cannot be recommended as-is."
+    }
+  ]
+}
